@@ -57,7 +57,7 @@ class HomeScreen extends StatelessWidget {
                           color: Colors.grey,
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 8,
                       ),
                       Container(
@@ -68,7 +68,7 @@ class HomeScreen extends StatelessWidget {
                           color: Colors.grey,
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 8,
                       ),
                       Container(
