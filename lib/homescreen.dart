@@ -33,56 +33,192 @@ class HomeScreen extends StatelessWidget {
                 ))),
         body: Padding(
           padding: const EdgeInsets.only(top: 10),
-          child: Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Column(
-                mainAxisAlignment: MainAxisAlignment.start,
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  const Buscarwidget(),
-                  const Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                const Buscarwidget(),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Column(
                     children: [
-                      Text('Más populares'),
-                      Text('Ver todas'),
+                      const Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text('Más populares'),
+                          Text('Ver todas'),
+                        ],
+                      ),
+                      SingleChildScrollView(
+                        scrollDirection: Axis.horizontal,
+                        child: Row(
+                          children: [
+                            Container(
+                              height: 180,
+                              width: 120,
+                              decoration: const BoxDecoration(
+                                //imagen de la caratula
+                                color: Colors.grey,
+                              ),
+                            ),
+                            const SizedBox(
+                              width: 8,
+                            ),
+                            Container(
+                              height: 180,
+                              width: 120,
+                              decoration: const BoxDecoration(
+                                //imagen de la caratula
+                                color: Colors.grey,
+                              ),
+                            ),
+                            const SizedBox(
+                              width: 8,
+                            ),
+                            Container(
+                              height: 180,
+                              width: 120,
+                              decoration: const BoxDecoration(
+                                //imagen de la caratula
+                                color: Colors.grey,
+                              ),
+                            ),
+                            const SizedBox(width: 8),
+                            Container(
+                              height: 180,
+                              width: 120,
+                              decoration: const BoxDecoration(
+                                //imagen de la caratula
+                                color: Colors.grey,
+                              ),
+                            ),
+                          ],
+                        ),
+                      )
                     ],
                   ),
-                  Row(
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Column(
                     children: [
-                      Container(
-                        height: 180,
-                        width: 120,
-                        decoration: const BoxDecoration(
-                          //imagen de la caratula
-                          color: Colors.grey,
+                      const Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text('Próximas en el cine'),
+                          Text('Ver todas'),
+                        ],
+                      ),
+                      SingleChildScrollView(
+                        scrollDirection: Axis.horizontal,
+                        child: Row(
+                          children: [
+                            Container(
+                              height: 180,
+                              width: 120,
+                              decoration: const BoxDecoration(
+                                //imagen de la caratula
+                                color: Colors.grey,
+                              ),
+                            ),
+                            const SizedBox(
+                              width: 8,
+                            ),
+                            Container(
+                              height: 180,
+                              width: 120,
+                              decoration: const BoxDecoration(
+                                //imagen de la caratula
+                                color: Colors.grey,
+                              ),
+                            ),
+                            const SizedBox(
+                              width: 8,
+                            ),
+                            Container(
+                              height: 180,
+                              width: 120,
+                              decoration: const BoxDecoration(
+                                //imagen de la caratula
+                                color: Colors.grey,
+                              ),
+                            ),
+                            const SizedBox(width: 8),
+                            Container(
+                              height: 180,
+                              width: 120,
+                              decoration: const BoxDecoration(
+                                //imagen de la caratula
+                                color: Colors.grey,
+                              ),
+                            ),
+                          ],
                         ),
-                      ),
-                      const SizedBox(
-                        width: 8,
-                      ),
-                      Container(
-                        height: 180,
-                        width: 120,
-                        decoration: const BoxDecoration(
-                          //imagen de la caratula
-                          color: Colors.grey,
-                        ),
-                      ),
-                      const SizedBox(
-                        width: 8,
-                      ),
-                      Container(
-                        height: 180,
-                        width: 120,
-                        decoration: const BoxDecoration(
-                          //imagen de la caratula
-                          color: Colors.grey,
-                        ),
-                      ),
+                      )
                     ],
-                  )
-                ]),
-          ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Column(
+                    children: [
+                      const Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text('Más populares'),
+                          Text('Ver todas'),
+                        ],
+                      ),
+                      SingleChildScrollView(
+                        scrollDirection: Axis.horizontal,
+                        child: Row(
+                          children: [
+                            Container(
+                              height: 180,
+                              width: 120,
+                              decoration: const BoxDecoration(
+                                //imagen de la caratula
+                                color: Colors.grey,
+                              ),
+                            ),
+                            const SizedBox(
+                              width: 8,
+                            ),
+                            Container(
+                              height: 180,
+                              width: 120,
+                              decoration: const BoxDecoration(
+                                //imagen de la caratula
+                                color: Colors.grey,
+                              ),
+                            ),
+                            const SizedBox(
+                              width: 8,
+                            ),
+                            Container(
+                              height: 180,
+                              width: 120,
+                              decoration: const BoxDecoration(
+                                //imagen de la caratula
+                                color: Colors.grey,
+                              ),
+                            ),
+                            const SizedBox(width: 8),
+                            Container(
+                              height: 180,
+                              width: 120,
+                              decoration: const BoxDecoration(
+                                //imagen de la caratula
+                                color: Colors.grey,
+                              ),
+                            ),
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+              ]),
         ));
   }
 }
